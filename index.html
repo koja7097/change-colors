@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.box{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 4rem;
+    background: black;
+    background-image: linear-gradient(deepskyblue,blue,pink);
+    margin: 10% 0 0 40%;
+    box-shadow: 10px 10px 50px green,
+                0 0 50px deepskyblue,
+                        0 0 50px red;
+    animation: change 1s linear infinite;
+}
+@keyframes change{
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+body{
+    background-color: antiquewhite;
+}
+</style>
+<body>
+    <div class="box"></div>
+</body>
+</html>
